@@ -1,0 +1,28 @@
+// Logos List
+
+.logos-list {
+  margin: 50px 0;
+
+  &.u-card--white {
+    padding: clamp(52px, 4vw ,72px) 10px;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1550px;
+    margin: 0 auto;
+    row-gap: 20px;
+
+    li{
+      margin: 0 1%;
+
+      img{
+        height: clamp(60px, 4.5vw, 90px);
+        width: auto;
+      }
+    }
+  }
+}

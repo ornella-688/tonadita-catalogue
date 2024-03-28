@@ -1,0 +1,52 @@
+.title {
+  position: relative;
+
+  h1 {
+    font-size: clamp(50px, 4.5vw, 80px);
+    font-family: "Gotham Rounded";
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: -4.8px;
+    line-height: 0.9;
+
+    em {
+      font-style: normal;
+      display: block;
+      position: relative;
+    }
+  }
+
+  &__outline {
+    font-size: clamp(100px, 9vw, 180px);
+    font-family: "Gotham Rounded";
+    font-weight: bold;
+    font-style: normal;
+    line-height: 0.8;
+    letter-spacing: -9px;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    white-space: nowrap;
+    position: absolute;
+    bottom: -2px;
+
+    span {
+      opacity: 0.5;
+    }
+  }
+
+  .u-paragraphs {
+    margin: clamp(28px, 2.4vw, 68px) 0 0 0;
+
+    p {
+      margin: clamp(10px, 1vw, 32px) 0 0 0;
+    }
+
+    .list p {
+      margin: 0;
+    }
+
+    .u-btn-page {
+      margin: clamp(23px, 2vw, 43px) 0 0 0;
+    }
+  }
+}

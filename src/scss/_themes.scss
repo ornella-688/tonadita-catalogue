@@ -1,0 +1,190 @@
+// Themes
+$fullscreen: 1024px;
+
+.theme-dark {
+  .header {
+    &__title {
+      h2 {
+        color: $color-white;
+      }
+    }
+    &__menu {
+      color: $color-blue--dark;
+      background: $color-blue--light;
+      transition-duration: 0.2s;
+
+      &:hover {
+        background: $color-white;
+        transition-duration: 0.2s;
+      }
+    }
+  }
+  .u-full-section {
+    background-color: $color-blue--dark;
+  }
+  .title {
+    margin-top: 5vh;
+
+    @media (min-height: $fullscreen) {
+      margin-top: 10vh;
+    }
+
+    h1 {
+      color: $color-white;
+
+      em {
+        color: $color-blue--light;
+      }
+    }
+    &__outline {
+      -webkit-text-stroke-color: $color-blue--light;
+    }
+  }
+  .u-paragraphs {
+    p {
+      color: $color-white;
+    }
+  }
+  .footer {
+    &__nav {
+      .back {
+        color: $color-blue--light;
+        transition-duration: 0.2s;
+
+        &::before {
+          background: url("../img/icons/icon-arrow--blue-light.svg") no-repeat;
+          background-size: contain;
+        }
+
+        &:hover {
+          color: $color-white;
+          transition-duration: 0.2s;
+
+          &::before {
+            background: url("../img/icons/icon-arrow--white.svg") no-repeat;
+            background-size: contain;
+          }
+        }
+      }
+
+      .lang {
+        color: $color-white;
+        transition-duration: 0.2s;
+
+        &:hover {
+          color: $color-blue--light;
+          transition-duration: 0.2s;
+        }
+      }
+    }
+  }
+  .editorial {
+    .parallax1 > use {
+      fill: rgb(136, 209, 255);
+    }
+    .parallax2 > use {
+      fill: rgb(0, 117, 190);
+    }
+    .parallax3 > use {
+      fill: rgb(20, 58, 104);
+    }
+    .parallax4 > use {
+      fill: rgb(255, 255, 255);
+    }
+  }
+}
+
+.theme-light {
+  .header {
+    &__title {
+      h2 {
+        color: $color-blue--dark;
+      }
+    }
+    &__menu {
+      color: $color-white;
+      background: $color-blue--dark;
+      transition-duration: 0.2s;
+
+      &:hover {
+        color: $color-blue--dark;
+        background: $color-blue--light;
+        transition-duration: 0.2s;
+      }
+    }
+  }
+  .u-full-section {
+    background-color: $color-white;
+  }
+
+  .title {
+    margin-top: 10vh;
+    h1 {
+      color: $color-blue--light;
+
+      em {
+        color: $color-blue--dark;
+      }
+    }
+    &__outline {
+      -webkit-text-stroke-color: $color-blue--dark;
+    }
+  }
+  .u-paragraphs {
+    p {
+      color: $color-blue--dark;
+      font-weight: 400;
+
+      &.bold {
+        font-weight: bold;
+      }
+    }
+  }
+  .footer {
+    &__nav {
+      .back {
+        color: $color-blue--dark;
+        transition-duration: 0.2s;
+
+        &::before {
+          background: url("../img/icons/icon-arrow--blue-dark.svg") no-repeat;
+          background-size: contain;
+        }
+
+        &:hover {
+          color: $color-blue--light;
+          transition-duration: 0.2s;
+
+          &::before {
+            background: url("../img/icons/icon-arrow--blue-light.svg") no-repeat;
+            background-size: contain;
+          }
+        }
+      }
+
+      .lang {
+        color: $color-blue--dark;
+        transition-duration: 0.2s;
+
+        &:hover {
+          color: $color-blue--light;
+          transition-duration: 0.2s;
+        }
+      }
+    }
+  }
+  .editorial {
+    .parallax1 > use {
+      fill: rgb(136, 209, 255);
+    }
+    .parallax2 > use {
+      fill: rgb(0, 117, 190);
+    }
+    .parallax3 > use {
+      fill: #00478f;
+    }
+    .parallax4 > use {
+      fill: rgb(20, 58, 104);
+    }
+  }
+}

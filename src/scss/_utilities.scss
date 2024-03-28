@@ -1,0 +1,320 @@
+// Utilities
+
+.u-full-section {
+  height: 100vh;
+  padding: clamp(60px, 7vw, 200px) 100px 150px 100px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.u-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  &.align-end {
+    align-items: flex-end;
+  }
+  &.align-center {
+    align-items: center;
+  }
+  &.align-start {
+    align-items: flex-start;
+  }
+  &.justify-center {
+    justify-content: center;
+  }
+}
+
+.u-btn-page {
+  font-family: "Gotham Rounded";
+  font-weight: bold;
+  font-size: clamp(11px, 1vw, 14px);
+  line-height: 2;
+  text-transform: uppercase;
+  color: $color-blue--dark;
+  background: $color-blue--light;
+  padding: 16px 32px;
+  border-radius: 100px;
+  display: inline-block;
+  position: relative;
+  transition-duration: 0.2s;
+
+  &:hover {
+    background: $color-white;
+    transition-duration: 0.2s;
+  }
+
+  &.video {
+    padding: 16px 32px 16px 80px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 32px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 33px;
+      height: 27px;
+      background: url("../img/icons/icon-video.svg") no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.u-btn-outline {
+  font-family: "Gotham Rounded";
+  font-weight: bold;
+  font-size: clamp(18px, 1.2vw, 18px);
+  line-height: 0.9;
+  color: $color-blue--dark;
+  padding: 12px 24px;
+  border: solid 1px $color-blue--dark;
+  border-radius: 100px;
+  transition-duration: 0.2s;
+  letter-spacing: -0.025em;
+
+  &:hover {
+    box-shadow: 0px 0px 10px $color-blue--dark;
+    transition-duration: 0.4s;
+  }
+}
+
+.u-btn-second {
+  font-family: "Gotham Rounded";
+  font-weight: bold;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.u-h-100 {
+  height: 100%;
+}
+
+.u-mw-400 {
+  max-width: 400px;
+}
+
+.u-mw-500 {
+  max-width: 500px;
+}
+
+.u-mw-600 {
+  max-width: 600px;
+}
+
+.u-mw-800 {
+  max-width: 800px;
+}
+
+.u-mt-80 {
+  margin-top: 80px;
+}
+.u-mt-40 {
+  margin-top: 40px;
+}
+.u-mt-20 {
+  margin-top: 20px;
+}
+
+.u-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.u-in-front {
+  position: relative;
+  z-index: 2;
+}
+
+.u-card--white {
+  background: $color-white;
+  border-radius: 20px;
+}
+
+.u-no-pad {
+  padding: 0;
+}
+
+.u-paragraphs {
+  p {
+    font-size: clamp(13px, 1.1vw, 20px);
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+
+    &.bold {
+      font-family: "Gotham Rounded";
+      font-weight: bold;
+      font-style: normal;
+      font-size: clamp(13px, 1.1vw, 24px);
+    }
+  }
+
+  .list {
+    display: flex;
+    margin: clamp(20px, 2vw, 30px) 0 0 0;
+
+    &__column {
+      margin: 0 clamp(10px, 1.3vw, 30px) 0 0;
+
+      p {
+        font-size: clamp(10px, 1vw, 18px);
+        line-height: 2;
+
+        img {
+          vertical-align: text-top;
+          display: inline-block;
+          margin: 0 10px 0 0;
+        }
+      }
+    }
+  }
+}
+
+.cropper {
+  width: 100%;
+  text-align: center;
+  position: relative;
+
+  &--square {
+    padding-top: 100%;
+  }
+  &--16-9 {
+    padding-top: 56.25%;
+  }
+
+  &__container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    &__inside {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.u-fade-down {
+  animation: fade-down 0.5s;
+
+  @keyframes fade-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+.u-fade-up {
+  animation: fade-up 0.5s;
+
+  @keyframes fade-up {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+.u-fade {
+  animation: fade 0.5s;
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+.u-img-content {
+  position: relative;
+  width: 100%;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.u-bg-dark {
+  background-color: $color-blue--dark;
+}
+
+.u-blend-screen {
+  mix-blend-mode: screen;
+}
+
+.u-btn-all {
+  font-family: "Gotham Rounded";
+  font-weight: 500;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: $color-white;
+  display: inline-block;
+  position: relative;
+  margin: 22px 0;
+  padding: 0 0 0 20px;
+  transition-duration: 0.2s;
+
+  &:hover {
+    color: $color-blue--light;
+    transition-duration: 0.2s;
+  }
+
+  span {
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background: $color-white;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      top: 0;
+      left: 0;
+      background: $color-white;
+      border-radius: 100%;
+      animation: pulse-btn-animation 1.5s infinite;
+    }
+
+    &::before {
+      animation-delay: 0.7s;
+    }
+
+    @keyframes pulse-btn-animation {
+      0% {
+        transform: scale(0);
+      }
+      100% {
+        transform: scale(5);
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.u-no-click {
+  pointer-events: none !important;
+  * {
+    pointer-events: none !important;
+  }
+}

@@ -1,0 +1,58 @@
+// Map
+
+.map {
+  width: 60%;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  &__container{
+    width: 110%;
+    transform: translateX(0);
+  }
+
+  .pin{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .pulse {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    position: relative;
+    position: absolute;
+    bottom: 34%;
+    left: 20.2%;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      top: 0;
+      left: 0;
+      background: $color-blue--light;
+      border-radius: 100%;
+      animation: pulse-animation 1.5s infinite;
+    }
+
+    &::before {
+      animation-delay: 0.7s;
+    }
+
+    @keyframes pulse-animation {
+      0% {
+        transform: scale(0);
+      }
+      100% {
+        transform: scale(12);
+        opacity: 0;
+      }
+    }
+  }
+}

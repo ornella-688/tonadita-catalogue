@@ -1,0 +1,59 @@
+// Header
+
+.header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
+  padding: clamp(40px, 2.5vw, 60px) 60px 0 100px;
+  box-sizing: border-box;
+  z-index: 3;
+
+  &__title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    img {
+      height: 40px;
+      margin: 0 42px 0 0;
+    }
+
+    h2 {
+      font-family: "Gotham Rounded";
+      font-weight: bold;
+      font-size: 25px;
+      letter-spacing: -1.12px;
+      margin: 8px 0 0 0;
+
+      a {
+        color: #00478f;
+        display: block;
+        text-decoration: none;
+      }
+    }
+
+    .u-btn-outline {
+      position: absolute;
+      right: 87px;
+      top: 12px;
+    }
+  }
+
+  &__menu {
+    width: 64px;
+    height: 64px;
+    transform: translateY(5px);
+    padding: 0;
+
+    font-family: "Gotham Rounded";
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 64px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 100%;
+  }
+}

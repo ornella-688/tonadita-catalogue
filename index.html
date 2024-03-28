@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tonadita</title>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="src/scss/styles.css" />
+</head>
+
+<body class="theme-light">
+
+  <section class="u-full-section u-no-pad">
+    <div class="blobs-container" data-aos="fade" data-aos-delay="100" data-aos-duration="700"
+      style="position: relative; z-index: 10;">
+      <img src="src/img/logos/logo-elcor-tonadita.svg" alt="Grupo Elcor" data-aos="fade" data-aos-delay="200"
+        data-aos-duration="700" class="logo-elcor">
+      <div class="blobs">
+        <div>
+          <a href="our-products.html" data-aos="fade-up" data-aos-delay="300" data-aos-duration="700">
+            <span>Our Products</span>
+            <img src="./src/img/home/b-products.svg" alt="Our Products" />
+          </a>
+        </div>
+        <div>
+          <a href="export.html" data-aos="fade-up" data-aos-delay="400" data-aos-duration="700">
+            <span>We export to <br />the 5 continents</span>
+            <img src="./src/img/home/b-export.svg" alt="We export" /></a>
+        </div>
+        <div>
+          <a href="clients.html" data-aos="fade-up" data-aos-delay="500" data-aos-duration="700">
+            <span>Companies <br />that trust us</span>
+            <img src="./src/img/home/b-clients.svg" alt="Companies" /></a>
+        </div>
+        <div>
+          <a href="our-brands.html" data-aos="fade-up" data-aos-delay="600" data-aos-duration="700">
+            <span>Our Brands</span>
+            <img src="./src/img/home/b-brands.svg" alt="Our Brands" /></a>
+        </div>
+        <div>
+          <a href="about.html" data-aos="fade-up" data-aos-delay="700" data-aos-duration="700">
+            <span>A successful <br />family story</span>
+            <img src="./src/img/home/b-story.svg" alt="Our successful story" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="video-container">
+      <div class="video-mask">
+        <video src="src/videos/loop-index.mp4" muted playsinline loop autoplay></video>
+      </div>
+    </div>
+  </section>
+  <style>
+    .video-mask {
+      background: #2e71b8;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+
+      clip-path: polygon(100% 0%, 0% 0%, 0.00% 66.07%, 3.33% 65.11%, 6.67% 64.03%, 10.00% 62.89%, 13.33% 61.73%, 16.67% 60.60%, 20.00% 59.56%, 23.33% 58.64%, 26.67% 57.89%, 30.00% 57.35%, 33.33% 57.03%, 36.67% 56.95%, 40.00% 57.11%, 43.33% 57.51%, 46.67% 58.12%, 50.00% 58.93%, 53.33% 59.89%, 56.67% 60.97%, 60.00% 62.11%, 63.33% 63.27%, 66.67% 64.40%, 70.00% 65.44%, 73.33% 66.36%, 76.67% 67.11%, 80.00% 67.65%, 83.33% 67.97%, 86.67% 68.05%, 90.00% 67.89%, 93.33% 67.49%, 96.67% 66.88%, 100.00% 66.07%);
+      /* -webkit-mask-image: url("src/img/home/video-mask.svg");
+      mask-image: url("src/img/home/video-mask.svg");
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-position: top;
+      mask-position: top;
+      -webkit-mask-size: 100%; */
+      mask-size: 100%;
+    }
+  </style>
+  <footer class="footer footer__dark">
+    <div class="footer__nav">
+      <a style="opacity: 0"></a>
+      <a href="index-es.html" class="u-btn-second lang">versión en español</a>
+    </div>
+    <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 
+      58-18 88-18s
+      58 18 88 18 
+      58-18 88-18 
+      58 18 88 18
+      v44h-352z" />
+      </defs>
+      <g class="parallax1">
+        <use xlink:href="#gentle-wave" x="50" y="3" />
+      </g>
+      <g class="parallax2">
+        <use xlink:href="#gentle-wave" x="50" y="0" />
+      </g>
+      <g class="parallax3">
+        <use xlink:href="#gentle-wave" x="50" y="9" />
+      </g>
+      <g class="parallax4">
+        <use xlink:href="#gentle-wave" x="50" y="6" />
+      </g>
+    </svg>
+  </footer>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

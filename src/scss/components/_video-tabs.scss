@@ -1,0 +1,71 @@
+// Video Tabs
+
+.video-tabs {
+  width: 65%;
+  margin: 0 auto;
+
+/*   .cropper--16-9 {
+    padding-top: 51.75%;
+  } */
+
+  &__content {
+    border-radius: 16px;
+    overflow: hidden;
+
+    .content {
+      width: 100%;
+      height: 100%;
+      display: none;
+      object-fit: initial;
+
+      &--active {
+        display: block;
+      }
+    }
+  }
+
+  &__tabs {
+    display: flex;
+    gap: 24px;
+    margin: 24px 0 0 0;
+
+    .tab {
+      width: 160px;
+      opacity: 0.5;
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      transition-duration: 0.2s;
+
+      &--active {
+        opacity: 1;
+        transition-duration: 0.2s;
+      }
+
+      img {
+        width: 100%;
+        display: block;
+      }
+
+      video {
+        width: 100%;
+      }
+    }
+  }
+}
+
+#modal-videos {
+  z-index: 2;
+
+  .modal__window {
+    position: relative;
+    background-color: #00478f;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 100px 100px 130px 100px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+  }
+}

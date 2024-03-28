@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tonadita</title>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="src/scss/styles.css" />
+</head>
+
+<body class="theme-light">
+
+  <section class="u-full-section u-no-pad">
+    <div class="blobs-container" data-aos="fade" data-aos-delay="100" data-aos-duration="700">
+      <img src="src/img/logos/logo-elcor-tonadita.svg" alt="Grupo Elcor" data-aos="fade" data-aos-delay="200"
+        data-aos-duration="700" class="logo-elcor">
+      <div class="blobs">
+        <div>
+          <a href="our-products-es.html"><span>Nuestros <br />Productos</span>
+            <img src="./src/img/home/b-products.svg" alt="Nuestros Productos">
+          </a>
+        </div>
+        <div>
+          <a href="export-es.html"><span>Exportamos a <br />los 5 continentes</span>
+            <img src="./src/img/home/b-export.svg" alt="Exportamos"></a>
+        </div>
+        <div>
+          <a href="clients-es.html"><span>Empresas que <br />confían en nosotros</span>
+            <img src="./src/img/home/b-clients.svg" alt="Empresas"></a>
+        </div>
+        <div>
+          <a href="our-brands-es.html"><span>Nuestras <br />marcas</span>
+            <img src="./src/img/home/b-brands.svg" alt="Conozca nuestras marcas"></a>
+        </div>
+        <div>
+          <a href="about-es.html"><span>Una historia <br />de éxito</span>
+            <img src="./src/img/home/b-story.svg" alt="Una historia éxito"></a>
+        </div>
+      </div>
+    </div>
+    <div class="video-container">
+      <div class="video-mask">
+        <video src="src/videos/loop-index.mp4" muted playsinline loop autoplay></video>
+      </div>
+    </div>
+  </section>
+  <style>
+    .video-mask {
+      background: #2e71b8;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      clip-path: polygon(100% 0%, 0% 0%, 0.00% 64.29%, 3.33% 63.13%, 6.67% 61.84%, 10.00% 60.47%, 13.33% 59.07%, 16.67% 57.72%, 20.00% 56.47%, 23.33% 55.37%, 26.67% 54.47%, 30.00% 53.82%, 33.33% 53.43%, 36.67% 53.34%, 40.00% 53.53%, 43.33% 54.01%, 46.67% 54.75%, 50.00% 55.71%, 53.33% 56.87%, 56.67% 58.16%, 60.00% 59.53%, 63.33% 60.93%, 66.67% 62.28%, 70.00% 63.53%, 73.33% 64.63%, 76.67% 65.53%, 80.00% 66.18%, 83.33% 66.57%, 86.67% 66.66%, 90.00% 66.47%, 93.33% 65.99%, 96.67% 65.25%, 100.00% 64.29%);
+      /* -webkit-mask-image: url("src/img/home/video-mask.svg");
+      mask-image: url("src/img/home/video-mask.svg");
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-position: top;
+      mask-position: top;
+      -webkit-mask-size: 100%; */
+      mask-size: 100%;
+    }
+  </style>
+  <footer class="footer footer__dark">
+    <div class="footer__nav">
+      <a style="opacity: 0"></a>
+      <a href="index.html" class="u-btn-second lang lang--en">English version</a>
+    </div>
+    <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 
+      58-18 88-18s
+      58 18 88 18 
+      58-18 88-18 
+      58 18 88 18
+      v44h-352z" />
+      </defs>
+      <g class="parallax1">
+        <use xlink:href="#gentle-wave" x="50" y="3" />
+      </g>
+      <g class="parallax2">
+        <use xlink:href="#gentle-wave" x="50" y="0" />
+      </g>
+      <g class="parallax3">
+        <use xlink:href="#gentle-wave" x="50" y="9" />
+      </g>
+      <g class="parallax4">
+        <use xlink:href="#gentle-wave" x="50" y="6" />
+      </g>
+    </svg>
+  </footer>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
